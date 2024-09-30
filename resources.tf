@@ -1,6 +1,10 @@
 # main.tf
 resource "aws_s3_bucket" "terraform-states" {
   bucket = var.terraform_state_bucket_name
+}
+
+resource "aws_s3_bucket_acl" "terraform-states-acl" {
+  bucket = aws_s3_bucket.terraform-states.id
   acl    = "private"
 }
 
