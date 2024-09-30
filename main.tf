@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = var.terraform_state_bucket_name
+    bucket         = "rss-terraform-states"
     key            = "terraform.tfstate"
-    region         = var.aws_region
+    region         = "us-east-1"
     encrypt        = true
   }
 }
