@@ -18,3 +18,9 @@ variable "terraform_state_bucket_name" {
   description = "The name of the S3 bucket to store Terraform state"
   type        = string
 }
+
+variable "terraform_github_actions_role_name" {
+  description = "The name of the IAM role for GitHub Actions"
+  type        = string
+  default     = "GithubActionsRole"
+}
