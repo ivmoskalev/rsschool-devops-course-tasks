@@ -1,6 +1,6 @@
 # main.tf
-resource "aws_s3_bucket" "rss-terraform-states" {
-  bucket = "rss-terraform-states"
+resource "aws_s3_bucket" "terraform-states" {
+  bucket = var.terraform_state_bucket_name
   acl    = "private"
 }
 

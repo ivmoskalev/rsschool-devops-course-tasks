@@ -13,3 +13,8 @@ variable "github_repository_name" {
   description = "GitHub repository name to associate with IAM role"
   type        = string
 }
+
+variable "terraform_state_bucket_name" {
+  description = "The name of the S3 bucket to store Terraform state"
+  type        = string
+}
