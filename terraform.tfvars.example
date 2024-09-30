@@ -1,0 +1,14 @@
+# Your AWS Account ID
+aws_account_id = "123456789012"
+
+# AWS Region to deploy resources in
+aws_region = "us-east-1"
+
+# GitHub repository name in the format 'username/repository'
+github_repository_name = "your-github-username/your-repository"
+
+# Name of the S3 bucket for storing Terraform state (must be globally unique)
+terraform_state_bucket_name = "your-unique-s3-bucket-name"
+
+# Name of the IAM role for GitHub Actions
+terraform_github_actions_role_name = "YourIAMRoleName"
